@@ -1,3 +1,6 @@
+const isProduction = process.env.NODE_ENV === 'production';
+const basepath = isProduction ? "/portfolio" : "";
+
 export const portfolioData = {
   name: "Ian Sobrecaray",
   title: "Software Engineer",
@@ -6,30 +9,30 @@ export const portfolioData = {
     {
       name: "Github",
       url: "https://github.com/ian-sobs",
-      icon: "/assets/social_icons/github-svgrepo-com.svg"
+      icon: `${basepath}/assets/social_icons/github-svgrepo-com.svg`
     },
     {
       name: "LinkedIn",
       url: "https://www.linkedin.com/in/ian-joseph-ilano-sobrecaray-89ba9a378",
-      icon: "/assets/social_icons/linkedin-svgrepo-com.svg"
+      icon: `${basepath}/assets/social_icons/linkedin-svgrepo-com.svg`
     },
     {
       name: "email",
       url: "",
-      icon: "/assets/social_icons/gmail-svgrepo-com.svg"
+      icon: `${basepath}/assets/social_icons/gmail-svgrepo-com.svg`
     }
   ],
   education: [
       {
         name: "University of San Carlos (College)",
-        logo: "/assets/education_logo/USC_university_seal.svg",
+        logo: `${basepath}/assets/education_logo/USC_university_seal.svg`,
         program: "Bachelor of Science in Computer Science",
         date_graduated: "July 3, 2026",
         certifications: ["PhilNITS Fundamental IT Engineer certified (Oct 2024)", "CISCO CCNA and Cybersecurity Certified"],
       },
       {
         name: "Caraga Regional Science High School (Senior High School)",
-        logo: "/assets/education_logo/crshs_logo.jpeg",
+        logo: `${basepath}/assets/education_logo/crshs_logo.jpeg`,
         program: "STEM Strand",
         date_graduated: "June, 2022",
         certifications: []

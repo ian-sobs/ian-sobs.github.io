@@ -1,8 +1,12 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-    basePath: "/portfolio",
-    output: "export",  // <=== enables static exports
-    reactStrictMode: true,
-}
+const isGithubActions = process.env.GITHUB_ACTIONS || false;
 
-export default nextConfig
+// Replace 'your-repo-name' with your exact GitHub repository name
+const repoName = 'portfolio'; 
+
+const nextConfig = {
+  output: 'export', // Required for GitHub Pages static export
+  basePath: isGithubActions ? `/${repoName}` : '',
+};
+
+export default nextConfig;

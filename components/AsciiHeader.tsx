@@ -86,7 +86,7 @@ export default function AnsiShadowPreAnimator({ text, text_color }: Props) {
       {/* Ultra-sharp DOM ASCII container */}
         <pre
         aria-hidden="true"
-        className={`m-0 p-0 font-mono text-[#ed695a] font-bold leading-none tracking-normal select-none overflow-x-auto overflow-y-hidden max-w-full lg:text-lg xl:text-lg text-[1.7vw] text-center inline-block`}
+        className={`m-0 p-0 font-mono text-[#ed695a] font-bold leading-none tracking-normal select-none overflow-x-auto overflow-y-hidden max-w-full  text-[1.7vw] sm:text-[1.4vw] text-center inline-block`}
         style={{
             fontFamily: 'ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Courier New", monospace',
             minHeight: `${grid.length * 1.25}em`, // Extra vertical headroom to prevent scrollbar triggers

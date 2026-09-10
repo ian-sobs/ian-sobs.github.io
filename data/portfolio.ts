@@ -1,12 +1,24 @@
 export const portfolioData = {
   name: "Ian Sobrecaray",
   title: "Software Engineer",
-  bio: "I'm a fresh BS Computer Science graduate from the University of San Carlos with professional internship experience in geospatial solutions, focused on making full-stack web applications using modern frameworks.",
-  socials: {
-    github: "https://github.com/ian-sobs",
-    linkedin: "https://www.linkedin.com/in/ian-joseph-ilano-sobrecaray-89ba9a378",
-    email: "sobrecarayianjoseph@gmail.com",
-  },
+  bio: "I'm Ian Sobrecaray, a fresh BS Computer Science graduate from the University of San Carlos with professional internship experience in geospatial solutions, focused on making full-stack web applications using modern frameworks.",
+  socials: [
+    {
+      name: "Github",
+      url: "https://github.com/ian-sobs",
+      icon: "/assets/social_icons/github-svgrepo-com.svg"
+    },
+    {
+      name: "LinkedIn",
+      url: "https://www.linkedin.com/in/ian-joseph-ilano-sobrecaray-89ba9a378",
+      icon: "/assets/social_icons/linkedin-svgrepo-com.svg"
+    },
+    {
+      name: "sobrecarayianjoseph@gmail.com",
+      url: "sobrecarayianjoseph@gmail.com",
+      icon: "/assets/social_icons/gmail-svgrepo-com.svg"
+    }
+  ],
   education: [
       {
         name: "University of San Carlos (College)",
@@ -43,7 +55,7 @@ export const portfolioData = {
       frameworks: []
     }, {
       name: "Javascript",
-      frameworks: ["React", "NextJS", "NodeJS"]
+      frameworks: ["React", "Next.js", "NodeJ.js"]
     }, {
       name: "Python",
       frameworks: []
@@ -54,18 +66,37 @@ export const portfolioData = {
   ],
   projects: [
     {
-      title: "Project One Title",
-      description: "A full-stack web application built to solve a specific problem. Highlight key features and performance improvements here.",
-      tags: ["Next.js", "TypeScript", "Tailwind CSS", "PostgreSQL"],
-      githubUrl: "https://github.com/yourusername/project-one",
-      liveUrl: "https://project-one.com",
+      title: "Dormies",
+      description: "A university Information Management 2 and Web Development 2 group project, Dorimies is a dormitory management system made to make dorm hunting easier, especially for students.",
+      roles: [
+        "Architected and built a responsive user interface using NextJS and Tailwind CSS to streamline room bookings and student tracking.",
+        "Designed the relational backend architecture using MySQL.",
+      ],
+      tags: ["Next.js", "Tailwind CSS", "MySQL"],
+      githubUrl: "https://github.com/ian-sobs/IM2_webDev2_project.git",
+      liveUrl: "",
     },
     {
-      title: "Project Two Title",
-      description: "An intuitive web interface designed for seamless user interaction and responsive performance across all devices.",
-      tags: ["React", "Node.js", "Express", "MongoDB"],
-      githubUrl: "https://github.com/yourusername/project-two",
-      liveUrl: "https://project-two.com",
+      title: "Kuripot",
+      description: "A university group project for the App Development class. Kuripot is a finance tracker web app.",
+      roles: [
+        "Engineered the backend server architecture utilizing ExpressJS and PostgreSQL."
+      ],
+      tags: ["React", "Tailwind CSS", "Express.js", "Sequelize", "PostgreSQL"],
+      githubUrl: "https://github.com/ian-sobs/KURIPOT.git",
+      liveUrl: "",
+    },
+    {
+      title: "Cross-Modal Approach to Clustering Multimodal Influencer Posts Using Healnet, Hdbscan and Topic Modelling",
+      description: "The university undergraduate thesis I co-authored.",
+      roles: [
+        "Trained the adapted fusion model with self-supervised methods.",
+        "Designed the methodological flow of the project.",
+      ],
+      tags: ["Python", "PyTorch", "Google Colab"],
+      githubUrl: "https://github.com/ian-sobs/KURIPOT.git",
+      liveUrl: "",
+      articleLink: "https://doi.org/10.2991/978-94-6239-624-1_11"
     },
   ],
 };

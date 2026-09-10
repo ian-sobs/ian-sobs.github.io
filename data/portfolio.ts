@@ -15,7 +15,7 @@ export const portfolioData = {
     },
     {
       name: "sobrecarayianjoseph@gmail.com",
-      url: "sobrecarayianjoseph@gmail.com",
+      url: "",
       icon: "/assets/social_icons/gmail-svgrepo-com.svg"
     }
   ],

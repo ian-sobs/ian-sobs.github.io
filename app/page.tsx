@@ -1,6 +1,7 @@
 import { portfolioData } from "@/data/portfolio";
 import Link from "next/link";
 import AnsiShadowPreAnimator from "@/components/AsciiHeader";
+import { SocialPills } from "@/components/social_pills";
 
 export default function Home() {
   return (
@@ -258,41 +259,7 @@ export default function Home() {
             I'm currently looking for new opportunities in software development. If there is anything I can help with, let's talk.
           </p>
           <div className="flex flex-wrap justify-center items-center gap-4 w-full mx-auto sm:max-w-[65vw]">
-            {portfolioData.socials.map((social, index) => (
-              <a 
-                key={index} 
-                href={social.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="
-                  group m-2.5 inline-flex items-center gap-2 rounded-full 
-                  bg-[#3f403f]/50 hover:bg-[#ed695a] 
-                  px-4 py-2.5 
-                  text-white hover:text-black 
-                  transition-all duration-200 ease-in-out
-                "
-              > 
-                {/* SVG Icon via CSS Masking */}
-                <span 
-                  style={{
-                    maskImage: `url(${social.icon})`,
-                    WebkitMaskImage: `url(${social.icon})`,
-                    maskSize: 'contain',
-                    WebkitMaskSize: 'contain',
-                    maskRepeat: 'no-repeat',
-                    WebkitMaskRepeat: 'no-repeat',
-                    maskPosition: 'center',
-                    WebkitMaskPosition: 'center',
-                  }}
-                  className="h-5.5 w-5.5 bg-white group-hover:bg-black shrink-0 transition-colors duration-200"
-                />
-
-                {/* Label */}
-                <span className="font-bold text-sm font-mono">
-                  {social.name}
-                </span>
-              </a>
-            ))}
+            <SocialPills></SocialPills>
           </div>
         </section>
       </main>

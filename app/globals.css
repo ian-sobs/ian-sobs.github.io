@@ -117,6 +117,11 @@
     --sidebar-ring: oklch(0.556 0 0);
 }
 
+::selection {
+  background-color: #ed695a; /* Your retro accent color */
+  color: #000000;            /* Text color when highlighted */
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;

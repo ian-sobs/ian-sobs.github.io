@@ -14,7 +14,7 @@ export const portfolioData = {
       icon: "/assets/social_icons/linkedin-svgrepo-com.svg"
     },
     {
-      name: "sobrecarayianjoseph@gmail.com",
+      name: "email",
       url: "",
       icon: "/assets/social_icons/gmail-svgrepo-com.svg"
     }
